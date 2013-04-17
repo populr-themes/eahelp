@@ -103,7 +103,10 @@
 
 .description, .body {
   margin: 10px 0;
-  ul, ol { margin: .5em 0 .5em 1.5em; }
+  ul, ol {
+    margin: .5em 0;
+    list-style-position: inside;
+  }
   ul li { list-style-type: disc; }
   ol li { list-style-type: decimal; }
 }
@@ -161,7 +164,7 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 #footer {
-  height: 100px;
+  height: 120px;
   #gradient > .vertical(@EAHgray, darken(@EAHgray, 20%));
   color: #eee;
   text-align: center;
@@ -203,6 +206,8 @@
     width: auto !important;
     padding: 0 20px !important;
   }
+
+  #footer { height: 80px; }
 }
 
 @media screen and (max-width: 600px) {
