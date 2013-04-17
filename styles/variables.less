@@ -1,3 +1,5 @@
+@import '//fonts.googleapis.com/css?family=Open+Sans:300,700spo&.css';
+
 // Use @base-url when specifying relative paths to images, fonts, 
 // and other resources.
 @base-url: '..';
@@ -15,20 +17,22 @@
 
 // Logo
 @brand-logo-path: "@{base-url}/images/logo.png";
-@brand-logo-width: 237px;
+@brand-logo-width: 246px;
 @brand-logo-height: 60px;
 
 // Font
-@brand-title-font: 'Trebuchet MS', Tahoma, sans-serif;
+@brand-title-font: 'Open Sans', Tahoma, sans-serif;
 @brand-body-font: Tahoma, sans-serif;
 
 // Colors
 @EAHgray: #6D6E71;
 @EAHorange: #CA5F1D;
-@brand-accent-color: @EAHorange;
 
 /* END BRANDED THEME VARIABLES */
-
+@brand-text-color: #555;
+@brand-title-color: #555;
+@brand-link-color: #f90;
+@brand-gradient-color: @EAHgray;
 
 /* UI VARIABLES */
 // The following variables can be edited by Populr's users
@@ -42,4 +46,4 @@
 // users if you set it up as one of your color palettes. See the 
 // Populr themer documentation for details on how this works:
 // http://developers.populr.me/theming/
-@accent-color: @brand-accent-color;
+@accent-color: @EAHorange;
